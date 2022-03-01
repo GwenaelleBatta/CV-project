@@ -60,7 +60,7 @@ footer section{ /*2*/
     height: 6rem;
     font-size: 2rem;
     color: #000000;
-    background: #fff;
+    background: #FFFFFF;
     box-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0, 0.3);
     transition: transform .7s cubic-bezier(.645,.045,.355,1);
 }
@@ -71,7 +71,7 @@ footer section{ /*2*/
 
 }
 .nav__item{ /*10*/
-    margin-right: 0.7em;
+    margin-right: 0.5em;
     padding-top: 0;
 }
 .intro{/*10*/
@@ -80,14 +80,16 @@ footer section{ /*2*/
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30% ;
     grid-column: span 2;
     position: relative;
 }
 .intro__div{/*10*/
     color: #FFFFFF;
     background-color: rgba(204,0,13,0.8);
-    background-size: 70%;
+    /*background-size: 70%;*/
+    grid-row: 1/3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,14 +225,14 @@ footer section{ /*2*/
     font-weight: 100;
     padding: 100px;
     z-index: 1;
-    grid-column: 2/3;
-    grid-row: 2/3;
+    /*grid-column: 2/3;*/
+    /*grid-row: 2/3;*/
 
 }
 .presentation__position{ /*10*/
     z-index: 1;
     position: absolute;
-    bottom: 0;
+    bottom: -50%;
     right: 0;
     max-width: 50%;
 
@@ -372,16 +374,29 @@ footer section{ /*2*/
     padding-right: 20px;
     flex-grow: 1;
 }
-.xp__input, .qualites__input{ /*20*/
-    border: none;
+.button__link{ /*11*/
+    color: #000000;
     min-width: 2em;
     min-height: 2em;
-    font-size: 0.8235294117647059em;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     background-color: #FFFFFF;
     letter-spacing: 1px;
-
+}
+.button__polygon{
+    color: #FFFFFF;
+    background-color: #DEC2A0;
+    border-radius: 50%;
+    padding: 3.5em;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button__polygon path{
+    fill: #FFFFFF;
 }
 .school__item:hover:after{ /*21*/
     /*content:url("../IMG/fleche-bluecircle.svg");*/
@@ -428,7 +443,7 @@ footer section{ /*2*/
     font-size: 20px;
     line-height: 1.7em;
 }
-.ponctuel__figure, .auto__figure, .orga__figure{
+.ponctuel__figure, .auto__figure, .orga__figure{ /*30*/
     margin: 0;
     overflow: auto;
 }

@@ -86,6 +86,60 @@ main section{ /*2*/
     white-space: nowrap; /* added line */
     border: 0;
 }
+.nav__liste { /*10*/
+    display: flex;
+    padding-left: 20px;
+}
+.nav__item{ /*10*/
+    margin-right: 0.7em;
+    padding-top: 0;
+}
+.nav__liste a{ /*11*/
+    font-size: 16px; /*15/17*/
+    color: #000000;
+}
+.nav__liste+.nav__liste{ /*20*/
+    justify-content: end;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+.nav__liste+.nav__liste a{ /*21*/
+    font-size: 12px; /*12/17*/
+    color: #AEAEAE;
+    text-transform: uppercase;
+}
+.orga,.auto,.ponctuel{ /*30*/
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    margin-right: 2em;
+}
+.ponctuel__figure, .auto__figure, .orga__figure{ /*30*/
+    margin: 0;
+    overflow: auto;
+    background-color: yellow;
+}
+.organisation__title, .autonome__title, .ponctualite__title{ /*30*/
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.organisation__text, .autonome__text, .ponctualite__text{
+    font-size: 20px;
+    line-height: 1.7em;
+}
+.orga__text,.auto__text,.ponctuel__text{
+    margin-top: 0;
+    padding: 0 1.5em 3em 1.5em;
+}
+.nav__liste:first-of-type a:hover{ /*31*/
+    background-color: #EAEAEA;
+}
+.nav__liste+.nav__liste a:hover{/*31*/
+    color: #000000;
+    background-color: none;
+}
+
 @media only screen and (min-width: 801px) {
     header, main{ /*2*/
     padding-left: 200px;
@@ -94,13 +148,36 @@ main section{ /*2*/
         display: flex;
         flex-direction: row;
     }
+    .orga,.auto,.ponctuel{ /*30*/
+        max-width: 18em;
+        margin-right: 2em;
+        margin-bottom: 10em;
+    }
 
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 601px) and (max-width: 800px){
+
+}
+@media only screen and (max-width: 600px) {
     .qualites__position{
         display: flex;
         flex-direction: column;
     }
-    .nav__liste
+    .nav__liste {/*10*/
+        display: flex;
+        padding-left: 20px;
+    }
+    .orga,.auto,.ponctuel{ /*30*/
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-bottom: 10em;
+        max-height: 60%;
+    }
+    .ponctuel__figure img, .auto__figure img, .orga__figure img{ /*33*/
+        border-radius: 5px 5px 0px 0px;
+        /*float: left;*/
+        width: 100%;
+    }
+
 
 }
