@@ -5,7 +5,7 @@
 	<meta name="author" content="Batta Gwenaëlle">
 	<meta name="description" content="Projet CV">
 	<!--		<link rel="stylesheet" href="reset.css">-->
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/main.css">
 	<title>
 		Projet CV Batta Gwenaëlle
 	</title>
@@ -83,9 +83,9 @@
 			<mark>langages</mark>
 			du web maîtrisé
 		</h2>
-<!--		<svg viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg" class="langage__rect">-->
-<!--			<rect x="0" y="0" width="200" height="100" transform="rotate(45)"/>-->
-<!--		</svg>-->
+		<!--		<svg viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg" class="langage__rect">-->
+		<!--			<rect x="0" y="0" width="200" height="100" transform="rotate(45)"/>-->
+		<!--		</svg>-->
 		<div>
 			<section aria-labelledby="js" class="langage__js js">
 				<h3 id="js" role="heading" aria-level="3" class="js__title hidden">
@@ -197,7 +197,7 @@
 					Boulangerie Collin
 				</h3>
 				<figure class="bake__figure patron">
-					<img src="./IMG/collin_fred.jpg" alt="Photo de Frédérique Collin">
+					<img src="./IMG/collin_fred.jpg" alt="Photo de Frédérique Collin" width="90">
 				</figure>
 				<p class="bake__text">
 					<q>Très dynamique et consciencieuse dans les tâches demandées</q>
@@ -222,16 +222,16 @@
 					La Boite à Coudre
 				</h3>
 				<figure class="sew__figure patron">
-					<img src="./IMG/grosjean_jullye.jpg" alt="Photo de la couturière Jullye Grosjean">
+					<img src="./IMG/grosjean_jullye.jpg" alt="Photo de la couturière Jullye Grosjean" width="90">
 				</figure>
 				<p class="sew__text">
-					<q>Très travailleuse et toujours présentes à l&rsquo;heure. Bon contact avecles clients. </q>
+					<q>Très travailleuse et toujours présente à l&rsquo;heure. Bon contact avec les clients. </q>
 				</p>
 				<p class="sew__text">
 					<small>J. GROSJEAN, GERANTE DU COMMERCE "LA BOITE A COUDRE"</small>
 				</p>
 				<figure class="sew__logo">
-					<img src="./IMG/boite.png" alt="Logo de la boite à coudre" width="40">
+					<img src="./IMG/logo_sew.svg" alt="Logo de la boite à coudre" width="40">
 				</figure>
 			</section>
 			<section class="xp__tailleur tailor" aria-labelledby="antoine">
@@ -239,7 +239,7 @@
 					Philippe Antoine
 				</h3>
 				<figure class="tailor__figure patron">
-					<img src="./IMG/antoine_philippe%20(2).png" alt="Photo du tailleur Philippe Antoine">
+					<img src="./IMG/antoine_philippe.jpg" alt="Photo du tailleur Philippe Antoine" width="90">
 				</figure>
 				<p class="tailor__text">
 					<q>Courageuse et n&rsquo;a pas peur du travail et très volontaire. </q>
@@ -248,7 +248,7 @@
 					<small>P. ANTOINE, GERANT DU COMMERCE"PHILIPPE ANTOINE"</small>
 				</p>
 				<figure class="tailor__logo">
-					<img src="./IMG/Antoine.png" alt="Logo du tailleur Philippe Antoine" width="70">
+					<img src="./IMG/logo_tailor.svg" alt="Logo du tailleur Philippe Antoine" width="40">
 				</figure>
 			</section>
 			<div class="xp__div">
@@ -287,61 +287,66 @@
 			Mes
 			<mark>qualités</mark>
 		</h2>
-		<section aria-labelledby="orga" class="orga">
-			<h3 id="orga" role="heading" aria-level="3" class="orga__title hidden">
-				Organisation
-			</h3>
-			<figure class="orga__figure">
-				<img src="./IMG/orga.jpg" alt="Photo d&rsquo;armoires de rangement" width="431">
-			</figure>
-			<section aria-labelledby="orga-text" class="orga__text organisation">
-				<h4 id="orga-text" role="heading" aria-level="4" class="organisation__title">
+		<div class="qualites__position">
+			<section aria-labelledby="orga" class="orga">
+				<h3 id="orga" role="heading" aria-level="3" class="orga__title hidden">
 					Organisation
-				</h4>
-				<p class="organisation__text">
-					Cette qualité est irréprochable, chez moi. Je sais juger combien de temps me prendra une tâche et
-					finis toujours dans les temps.
-				</p>
+				</h3>
+				<figure class="orga__figure">
+					<img src="./IMG/orga.jpg" alt="Photo d&rsquo;armoires de rangement" width="431">
+				</figure>
+				<section aria-labelledby="orga-text" class="orga__text organisation">
+					<h4 id="orga-text" role="heading" aria-level="4" class="organisation__title">
+						Organisation
+					</h4>
+					<p class="organisation__text">
+						Cette qualité est irréprochable, chez moi. Je sais juger combien de temps me prendra une tâche
+						et
+						finis toujours dans les temps.
+					</p>
+				</section>
 			</section>
-		</section>
-		<section aria-labelledby="autonome" class="auto">
-			<h3 id="autonome" role="heading" aria-level="3" class="auto__title hidden">
-				Autonomie
-			</h3>
-			<figure class="auto__figure">
-				<img src="./IMG/autonomi.jpg" alt="Photo d&rsquo;armoires de rangement" width="431">
-			</figure>
-			<section aria-labelledby="autonome-text" class="auto__text autonome">
-				<h4 id="autonome-text" role="heading" aria-level="4" class="autonome__title">
+			<section aria-labelledby="autonome" class="auto">
+				<h3 id="autonome" role="heading" aria-level="3" class="auto__title hidden">
 					Autonomie
-				</h4>
-				<p class="autonome__text">
-					Je suis quelqu&rsquo;un d&rsquo;autonome,je parviens à voir les choses qui sont à entreprendre et je
-					n&rsquo;aime pas resté sans rien faire.
-				</p>
+				</h3>
+				<figure class="auto__figure">
+					<img src="./IMG/autonomi.jpg" alt="Photo d&rsquo;armoires de rangement" width="431">
+				</figure>
+				<section aria-labelledby="autonome-text" class="auto__text autonome">
+					<h4 id="autonome-text" role="heading" aria-level="4" class="autonome__title">
+						Autonomie
+					</h4>
+					<p class="autonome__text">
+						Je suis quelqu&rsquo;un d&rsquo;autonome,je parviens à voir les choses qui sont à entreprendre
+						et je
+						n&rsquo;aime pas resté sans rien faire.
+					</p>
+				</section>
 			</section>
-		</section>
-		<section aria-labelledby="ponctuel" class="ponctuel">
-			<h3 id="ponctuel" role="heading" aria-level="3" class="ponctuel__title hidden">
-				Ponctualité
-			</h3>
-			<figure class="ponctuel__figure">
-				<img src="./IMG/ponctuel.jpg" alt="Photo d&rsquo;armoires de rangement" width="414">
-			</figure>
-			<section aria-labelledby="ponctuel-text" class="ponctuel__text ponctualite">
-				<h4 id="ponctuel-text" role="heading" aria-level="4" class=" ponctualite__title">
+			<section aria-labelledby="ponctuel" class="ponctuel">
+				<h3 id="ponctuel" role="heading" aria-level="3" class="ponctuel__title hidden">
 					Ponctualité
-				</h4>
-				<p class=" ponctualite__text">
-					Je mets un point d&rsquo;honneur à arriver à l&rsquo;heure à mes rendez-vous et suis même parfois en
-					avance.
-				</p>
+				</h3>
+				<figure class="ponctuel__figure">
+					<img src="./IMG/ponctuel.jpg" alt="Photo d&rsquo;armoires de rangement" width="414">
+				</figure>
+				<section aria-labelledby="ponctuel-text" class="ponctuel__text ponctualite">
+					<h4 id="ponctuel-text" role="heading" aria-level="4" class=" ponctualite__title">
+						Ponctualité
+					</h4>
+					<p class=" ponctualite__text">
+						Je mets un point d&rsquo;honneur à arriver à l&rsquo;heure à mes rendez-vous et suis même
+						parfois en
+						avance.
+					</p>
+				</section>
 			</section>
-		</section>
-		<div>
-			<form action="#" method="get">
-				<input type="submit" name="Voir le détail du parcours scolaire" value="Tout voir">
-			</form>
+			<div class="qualites__form">
+				<form action="#" method="get">
+					<input type="submit" name="Voir le détail du parcours scolaire" value="Tout voir" class="qualites__input">
+				</form>
+			</div>
 		</div>
 	</section>
 </main>
@@ -369,9 +374,13 @@
 			<a href="mailto:gwenaellebatta@gmail.com">gwenaellebatta@gmail.com</a>
 		</p>
 		<ul class="coordonneesp__reseau reseau">
-			<li class="reseau__item"><a href="https://www.linkedin.com/in/gwenaelle-batta-9251bb229/"><img src="./IMG/linkedin.svg" alt="logo linkedin" width="25"></a></li>
-			<li class="reseau__item"><a href="https://www.instagram.com/gwenaelle_webdesigner/"><img src="./IMG/insta.svg" alt="logo instagram" width="30"></a></li>
-			<li class="reseau__item"><a href="https://github.com/Gwenbatta0704"><img src="./IMG/github.svg" alt="logo whats app" width="30"></a></li>
+			<li class="reseau__item"><a href="https://www.linkedin.com/in/gwenaelle-batta-9251bb229/"><img
+					src="./IMG/linkedin.svg" alt="logo linkedin" width="25"></a></li>
+			<li class="reseau__item"><a href="https://www.instagram.com/gwenaelle_webdesigner/"><img
+					src="./IMG/insta.svg" alt="logo instagram" width="30"></a></li>
+			<li class="reseau__item"><a href="https://github.com/Gwenbatta0704"><img src="./IMG/github.svg"
+																					 alt="logo whats app"
+																					 width="30"></a></li>
 		</ul>
 	</section>
 	<section aria-labelledby="contact" class="contact">

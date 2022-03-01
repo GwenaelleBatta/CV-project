@@ -35,8 +35,6 @@ footer{ /*1*/
     font-size: 0.8235294117647059em;/*14/17*/
     padding-bottom: 120px;
     align-items: center;
-    /*justify-content: center;*/
-
 }
 main section{ /*2*/
     margin-top: 6rem;
@@ -130,18 +128,71 @@ footer section{ /*2*/
     font-size: 15px; /*14/51*/
     padding: 2em;
 }
+.xp{ /*10*/
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /*    grid-template-columns: repeat(4,350px);*/
+    /*grid-template-rows: repeat(4,250px);*/
+    grid-gap: 1.5em;
+}
+.xp section{ /*11*/
+    min-width: 100%;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    /*margin-right: 10em;*/
+}
+.bake{ /*10*/
+    grid-row: 2/4;
+    background-color: #8EC899;
+}
+.me{ /*10*/
+    grid-column: 2;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+
+}
+.sew{ /*10*/
+    grid-row: 3/5;
+    grid-column: 2;
+    background-color: #DEC2A0;
+}
+.tailor{ /*10*/
+    grid-row: 2/4;
+    grid-column: 3;
+    background-color: #A3CEF0;
+}
+.xp__div{ /*10*/
+    grid-column: 4;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
 
 .reseau__item{ /*10*/
-    display: inline-block;
-    margin-right: 1em;
+     display: inline-block;
+     margin-right: 1em;
+ }
+.sew__logo{/*10*/
+    width: 0;
 }
-.coordonneesp p { /*11*/
-    margin-left: 0.2em;
+.xp small{ /*11*/
+    font-size: 12px;
+    line-height: 5px;
 }
-.nav__liste a{ /*11*/
-    font-size: 16px; /*15/17*/
-    color: #000000;
+.patron img{ /*11*/
+    border-radius: 50%;
+    /*width: 30%;*/
 }
+
+
 .figure__logo{ /*10*/
     background-color: #E30513;
 }
@@ -254,9 +305,23 @@ footer section{ /*2*/
     border-top: 1px solid #EAEAEA;
     padding: 20px 350px;
 }
+.qualites__position{ /*10*/
+    display: flex;
+}
+.qualites__form{
+    display: flex;
+    align-items: center;
+}
 .coordonnees{ /*10*/
     font-size: 16px;
 
+}
+.coordonneesp p { /*11*/
+    margin-left: 0.2em;
+}
+.nav__liste a{ /*11*/
+    font-size: 16px; /*15/17*/
+    color: #000000;
 }
 .ecole figure{ /*11*/
     flex: 1;
@@ -307,6 +372,17 @@ footer section{ /*2*/
     padding-right: 20px;
     flex-grow: 1;
 }
+.xp__input, .qualites__input{ /*20*/
+    border: none;
+    min-width: 2em;
+    min-height: 2em;
+    font-size: 0.8235294117647059em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    letter-spacing: 1px;
+
+}
 .school__item:hover:after{ /*21*/
     /*content:url("../IMG/fleche-bluecircle.svg");*/
     /*width: 10%;*/
@@ -331,6 +407,36 @@ footer section{ /*2*/
 .coordonnees p:hover{ /*21*/
     color: #E30513;
 }
+.orga,.auto,.ponctuel{ /*30*/
+    display: flex;
+    max-width: 18em;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    margin-right: 2em;
+    margin-bottom: 10em;
+}
+.orga__text,.auto__text,.ponctuel__text{
+    margin-top: 0;
+    padding: 0 1.5em 3em 1.5em;
+}
+.organisation__title, .autonome__title, .ponctualite__title{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.organisation__text, .autonome__text, .ponctualite__text{
+    font-size: 20px;
+    line-height: 1.7em;
+}
+.ponctuel__figure, .auto__figure, .orga__figure{
+    margin: 0;
+    overflow: auto;
+}
+.ponctuel__figure img, .auto__figure img, .orga__figure img{
+    border-radius: 5px 5px 0px 0px;
+    float: left;
+    width: 100%;
+}
 .job__description .job__text:first-child{ /*30*/
     grid-row: 1/2;
     grid-column: 1/2;
@@ -343,6 +449,20 @@ footer section{ /*2*/
     color: #000000;
     background-color: none;
 }
+.xp__input:before, .qualites__input:before{ /*40*/
+    background-image: url("./IMG/Voir+.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 70px;
+    background-position: top;
+}
+.orga:hover,.auto:hover,.ponctuel:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: all 0.5s ease-in-out;
+}
+.to-top:after{ top:100%; }
+.to-top:hover:after{ top:0%; }
 /*.desc:hover{*/
 /*    background-color: rgba(255,255,255, 0.0);*/
 /*    color: #FFFFFF;*/
