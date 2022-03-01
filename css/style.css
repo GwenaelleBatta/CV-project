@@ -223,7 +223,7 @@ footer section{ /*2*/
     font-size: 36px;
     background-color: #FFFFFF;
     font-weight: 100;
-    padding: 100px;
+    padding: 134px;
     z-index: 1;
     /*grid-column: 2/3;*/
     /*grid-row: 2/3;*/
@@ -234,7 +234,7 @@ footer section{ /*2*/
     position: absolute;
     bottom: -50%;
     right: 0;
-    max-width: 50%;
+    max-width: 70%;
 
 }
 .presentation__description{ /*10*/
@@ -390,13 +390,23 @@ footer section{ /*2*/
     border-radius: 50%;
     padding: 3.5em;
 }
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button__text{
+    text-align: center;
 }
+.button__polygon:hover{
+    transform: scale(0.8);
+}
+/*.button{*/
+/*    background-color: yellow;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 .button__polygon path{
     fill: #FFFFFF;
+}
+.xp__div .button__text{
+    color: #FFFFFF;
 }
 .school__item:hover:after{ /*21*/
     /*content:url("../IMG/fleche-bluecircle.svg");*/
