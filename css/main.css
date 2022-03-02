@@ -1,81 +1,57 @@
 @font-face {
+    /*1*/
     font-family: 'Ubuntu';
     src: url("../font/Ubuntu-Regular.ttf");
 }
-html{ /*1*/
+
+html { /*1*/
     box-sizing: border-box;
 }
-body{ /*1*/
+
+body { /*1*/
     font-family: 'Ubuntu', serif;
     font-size: 17px;
     box-sizing: border-box;
     margin: 0;
 }
-mark{ /*1*/
+
+mark { /*1*/
     color: #E30513;
     background-color: #FFFFFF;
 }
-ul{ /*1*/
+
+ul { /*1*/
     list-style: none;
 }
-a{ /*1*/
+
+a { /*1*/
     text-decoration: none;
 }
-footer{ /*1*/
+
+footer { /*1*/
     background-color: #000000;
     color: #FFFFFF;
-    /*display: grid;*/
-    /*grid-gap: 15rem;*/
-    /*grid-template-columns: repeat(3,1fr);*/
-    /*grid-template-rows: 1fr 10em;*/
-    /*margin: 0 auto ;*/
-    /*width: 100%;*/
-    /*font-size: 0.8235294117647059em;!*14/17*!*/
-    /*padding-bottom: 120px;*/
-    /*align-items: center;*/
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0.8235294117647059em; /*14/17*/
+    align-items: center;
 }
-main section{ /*2*/
-    margin-top: 6rem;
+/*-----------Début Animation---------------*/
+@keyframes scaleButton{ /*2*/
+    from{
+        padding: 3.5em;
+    }
+    to{
+        padding: 3em;
+    }
 }
-/*footer section{ !*2*!*/
-/*    margin-top: 3.7rem;*/
-/*}*/
 *::selection { /*10*/
-    color: #fff;
+    color: #FFFFFF;
     background: rgba(227, 5, 19, .99);
 }
-.nav{ /*10*/
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    height: 6rem;
-    font-size: 2rem;
-    color: #000000;
-    background: #fff;
-    box-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0, 0.3);
-    transition: transform .7s cubic-bezier(.645,.045,.355,1);
-}
-.qualites__form{ /*10*/
-    display: flex;
-    align-items: center;
-}
-.figure__logo{ /*10*/
-    background-color: #E30513;
-}
-.red{ /*10*/
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    background-color: #E30513;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    padding: 1.5em 4.5em;
-}
-.hidden{ /*10*/
+
+.hidden { /*10*/
     position: absolute;
     width: 1px;
     height: 1px;
@@ -86,98 +62,388 @@ main section{ /*2*/
     white-space: nowrap; /* added line */
     border: 0;
 }
+
+.red { /*10*/
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background-color: #E30513;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 1.5em 4.5em;
+}
+
+.figure__logo { /*10*/
+    background-color: #E30513;
+}
+
+.nav { /*10*/
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    height: 6rem;
+    font-size: 2rem;
+    color: #000000;
+    background: #FFFFFF;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    transition: transform .7s cubic-bezier(.645, .045, .355, 1);
+}
+
 .nav__liste { /*10*/
     display: flex;
     padding-left: 20px;
 }
-.nav__item{ /*10*/
-    margin-right: 0.7em;
+
+.nav__item { /*10*/
+    margin-right: 0.5em;
     padding-top: 0;
 }
-.nav__liste a{ /*11*/
-    font-size: 16px; /*15/17*/
-    color: #000000;
+
+.intro { /*10*/
+    background-image: url("../IMG/pexels-olia-danilevich-4974912.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    grid-column: span 2;
+    position: relative;
 }
-.nav__liste+.nav__liste{ /*20*/
-    justify-content: end;
-    padding-right: 20px;
-    flex-grow: 1;
+
+.intro__div { /*10*/
+    color: #FFFFFF;
+    background-color: rgba(204, 0, 13, 0.8);
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/2;
 }
-.nav__liste+.nav__liste a{ /*21*/
-    font-size: 12px; /*12/17*/
-    color: #AEAEAE;
+
+.intro__title { /*10*/
+    font-weight: 100;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    padding: 50px;
+    line-height: 1.4em;
+}
+
+.presentation__title { /*10*/
+    font-size: 36px;
+    background-color: #FFFFFF;
+    font-weight: 100;
+    z-index: 1;
+}
+
+.presentation__description { /*10*/
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 2em;
+    padding: 2em 0;
+    margin-top: 3rem;
+}
+
+.langage section { /*11*/
+    background-color: #F8F8F8;
+    border-radius: 2% 2% 2% 2%;
+    text-align: center;
+    margin-top: 0.7em;
+    min-height: 10em;
+    color: #6A6A6A;
+}
+.langage img{ /*11*/
+    border: solid #EAEAEA 0.1rem;
+    padding: 1em;
+}
+.school__title { /*10*/
     text-transform: uppercase;
+    font-size: 15px; /*14/51*/
+    padding: 2em;
+}
+
+.mail a { /*11*/
+    color: #E30513;
+}
+.ecole figure{ /*11*/
+    flex: 1;
 }
 .orga,.auto,.ponctuel{ /*30*/
     display: flex;
+    max-width: 18em;
     flex-direction: column;
     background-color: #F8F8F8;
     border-radius: 5px;
     margin-right: 2em;
+    margin-bottom: 10em;
 }
-.ponctuel__figure, .auto__figure, .orga__figure{ /*30*/
-    margin: 0;
-    overflow: auto;
-    background-color: yellow;
+.orga__text,.auto__text,.ponctuel__text{ /*30*/
+    margin-top: 0;
+    padding: 0 1.5em 3em 1.5em;
 }
 .organisation__title, .autonome__title, .ponctualite__title{ /*30*/
     text-transform: uppercase;
     font-size: 14px;
 }
-.organisation__text, .autonome__text, .ponctualite__text{
+.organisation__text, .autonome__text, .ponctualite__text{ /*30*/
     font-size: 20px;
     line-height: 1.7em;
 }
-.orga__text,.auto__text,.ponctuel__text{
-    margin-top: 0;
-    padding: 0 1.5em 3em 1.5em;
+.ponctuel__figure, .auto__figure, .orga__figure{ /*30*/
+    margin: 0;
+    overflow: auto;
 }
-.nav__liste:first-of-type a:hover{ /*31*/
-    background-color: #EAEAEA;
+.ponctuel__figure img, .auto__figure img, .orga__figure img{ /*33*/
+    border-radius: 5px 5px 0px 0px;
+    float: left;
+    width: 100%;
 }
-.nav__liste+.nav__liste a:hover{/*31*/
-    color: #000000;
-    background-color: none;
+.intro, .presentation, .langage, .ref, .school, .job, .qualites { /*2*/
+    margin-top: 6rem;
 }
 
-@media only screen and (min-width: 801px) {
-    header, main{ /*2*/
-    padding-left: 200px;
-}
+/*----------Media queries-------------*/
+@media (max-width: 700px) {
+    /*12*/
+    footer {
+        flex-direction: column;
+    }
+    header, main { /*2*/
+        padding-left: 20px;
+    }
+    footer section { /*2*/
+        margin-top: 3.7rem;
+    }
+
+    .intro {
+        font-size: 15px; /*25/36*/
+    }
+
+    .intro__button { /*10*/
+        /*margin-top: 20px;*/
+        margin-bottom: 150px;
+    }
+    .presentation__figure{ /*10*/
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+    .presentation__description p:first-of-type{ /*12*/
+        grid-row: 1/3;
+        grid-column: 1;
+    }
+    .presentation__description p+p{ /*12*/
+        grid-row: 3/4;
+        grid-column: 2/4;
+    }
+    .school { /*10*/
+        background-image: url("../IMG/pexels-burst-545057.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*display: grid;*/
+        /*grid-template-columns: repeat(2,1fr);*/
+        flex-direction: column;
+        position: relative;
+    }
+
+    .scolaire { /*10*/
+        color: #FFFFFF;
+        background-color: rgba(204, 0, 13, 0.8);
+        max-width: 60%;
+        /*background-size: 15%;*/
+        margin-top: 50px;
+        /*grid-column: 2;*/
+        font-size: 1em;
+        line-height: 2.2em;
+        padding: 2em;
+    }
     .qualites__position{ /*10*/
-        display: flex;
-        flex-direction: row;
-    }
-    .orga,.auto,.ponctuel{ /*30*/
-        max-width: 18em;
-        margin-right: 2em;
-        margin-bottom: 10em;
-    }
-
-}
-@media only screen and (min-width: 601px) and (max-width: 800px){
-
-}
-@media only screen and (max-width: 600px) {
-    .qualites__position{
         display: flex;
         flex-direction: column;
     }
-    .nav__liste {/*10*/
+    .qualites__form{ /*10*/
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap; /* added line */
+        border: 0;
+    }
+    .langage__position{/*11*/
         display: flex;
-        padding-left: 20px;
+        line-height: 2em;
+        box-shadow: inset 100em 1em rgba(204,0,13,0.8);
+        background-image: url("../IMG/pexels-pixabay-270348.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-    .orga,.auto,.ponctuel{ /*30*/
-        margin-right: 2em;
-        margin-left: 2em;
-        margin-bottom: 10em;
-        max-height: 60%;
+    .patron img{ /*11*/
+        border-radius: 50%;
     }
-    .ponctuel__figure img, .auto__figure img, .orga__figure img{ /*33*/
-        border-radius: 5px 5px 0px 0px;
-        /*float: left;*/
-        width: 100%;
+}
+
+@media (min-width: 701px) {
+    /*12*/
+    footer { /*1*/
+        display: flex;
+        flex-direction: row;
     }
 
+    header, main { /*2*/
+        padding-left: 200px;
+    }
+
+    footer section { /*2*/
+        margin-top: 1rem;
+    }
+
+    .nav__liste a { /*11*/
+        font-size: 16px; /*15/17*/
+        color: #000000;
+    }
+
+    .intro { /*10*/
+        font-size: 25px; /*25/36*/
+    }
+
+    .intro__button { /*10*/
+        margin-top: 20px;
+        margin-bottom: 320px;
+    }
+
+    .presentation__title { /*10*/
+        padding: 134px;
+    }
+
+    .presentation__position { /*10*/
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 70%;
+    }
+    .presentation__figure { /*10*/
+        grid-row: 1/3;
+        grid-column: 3/4;
+    }
+    .school { /*10*/
+        background-image: url("../IMG/pexels-burst-545057.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+    .scolaire { /*10*/
+        color: #FFFFFF;
+        background-color: rgba(204, 0, 13, 0.8);
+        background-size: 15%;
+        grid-column: 1/2;
+        font-size: 2em;
+        line-height: 2.2em;
+        padding: 2em;
+    }
+    .button__polygon{ /*10*/
+        color: #FFFFFF;
+        background-color: #DEC2A0;
+        border-radius: 50%;
+        padding: 3.5em;
+        margin-left: 3em;
+    }
+    .button__text{ /*10*/
+        text-align: center;
+        margin-left: 3em;
+    }
+    .qualites__position{ /*10*/
+        display: flex;
+    }
+    .qualites__form{ /*10*/
+        display: flex;
+        align-items: center;
+    }
+    .button__link{ /*11*/
+        color: #000000;
+        min-width: 2em;
+        min-height: 2em;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .button__polygon path{ /*11*/
+        fill: #FFFFFF;
+    }
+    .presentation__description p+p{ /*12*/
+        grid-row: 2/3;
+        grid-column: 2;
+    }
+
+    .langage__position{/*11*/
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:".  .  s1" "s2 s3  ." ".  s4 s5";
+        grid-gap: 1.5rem;
+        padding-left: 10em;
+        padding-right: 10em;
+        line-height: 2em;
+        box-shadow: inset 100em 1em rgba(204,0,13,0.8);
+        background-image: url("../IMG/pexels-pixabay-270348.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .nav__liste + .nav__liste { /*20*/
+        justify-content: end;
+        padding-right: 20px;
+        flex-grow: 1;
+    }
+    .red:hover{ /*20*/
+        background-color: #FFFFFF;
+        color: #E30513;
+    }
+    .desc:hover { /*20*/
+        animation-duration: 1s;
+        animation-name: scaleLangage;
+        animation-iteration-count: infinite;
+        color: #FFFFFF;
+        background-image: url("../IMG/photo-survol.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*z-index: -1;*/
+        transform: translateZ(0) scaleY(1.08);
+    }
+    .button__polygon:hover{ /*20*/
+        animation-duration: 1s;
+        animation-name: scaleButton;
+    }
+    .mail a:hover{ /*21*/
+        background-color: #E30513;
+        color: #FFFFFF;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .nav__liste + .nav__liste a { /*21*/
+        font-size: 12px; /*12/17*/
+        color: #AEAEAE;
+        text-transform: uppercase;
+    }
+
+    .nav__liste:first-of-type a:hover { /*31*/
+        background-color: #EAEAEA;
+    }
+
+    .nav__liste + .nav__liste a:hover { /*31*/
+        color: #000000;
+    }
+    .orga:hover,.auto:hover,.ponctuel:hover { /*60*/
+        color: #FFFFFF;
+        background-color: #000000;
+        transition: all 0.5s ease-in-out;
+    }
 
 }

@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Batta Gwenaëlle">
 	<meta name="description" content="Projet CV">
-	<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" media="all" href="./css/style.css">
 	<title>
 		Projet CV Batta Gwenaëlle
 	</title>
@@ -19,8 +20,7 @@
 			Navigation
 		</h2>
 		<figure class="body__logo figure">
-			<a href="#cv" class="figure__link"><img src="./IMG/Logo-gb-white.svg" alt="Logo de Batta Gwenaëlle"
-													class="figure__logo" height="70" width="70"></a>
+			<a href="#cv" class="figure__link"><img src="./IMG/Logo-gb-white.svg" alt="Logo de Batta Gwenaëlle" class="figure__logo" height="70" width="70"></a>
 		</figure>
 		<ul class="nav__liste">
 			<li class="nav__item left"><a class="nav__link hidden" href="#cv">Logo</a></li>
@@ -173,11 +173,11 @@
 				<p class="bake__text">
 					<q>Très dynamique et consciencieuse dans les tâches demandées</q>
 				</p>
-				<p class="bake__text">
-					<small>F.COLLIN, PATRON DE LA BOULANGERIE COLLIN</small>
+				<p class="bake__text--small">
+					f.collin, patron de la boulangerie collin
 				</p>
 				<figure class="bake__logo">
-					<img src="./IMG/collin_logo.svg" alt="Logo de la Boulangerie Collin" width="70">
+					<img src="./IMG/collin_logo.svg" alt="Logo de la Boulangerie Collin" width="50">
 				</figure>
 			</section>
 			<section class="xp__me me" aria-labelledby="nom">
@@ -185,7 +185,7 @@
 					Batta Gwenaelle
 				</h3>
 				<figure class="me__figure">
-					<img src="./IMG/Gwen2.jpg" alt="Photo de Batta Gwenaëlle" width="330">
+					<img src="./IMG/Gwen2.jpg" alt="Photo de Batta Gwenaëlle">
 				</figure>
 			</section>
 			<section class="xp__couture sew" aria-labelledby="coudre">
@@ -193,13 +193,13 @@
 					La Boite à Coudre
 				</h3>
 				<figure class="sew__figure patron">
-					<img src="./IMG/grosjean_jullye.jpg" alt="Photo de la couturière Jullye Grosjean" width="90">
+					<img src="./IMG/grosjean_jullye.jpg" alt="Photo de la couturière Jullye Grosjean" width="50">
 				</figure>
 				<p class="sew__text">
 					<q>Très travailleuse et toujours présente à l&rsquo;heure. Bon contact avec les clients. </q>
 				</p>
-				<p class="sew__text">
-					<small>J. GROSJEAN, GERANTE DU COMMERCE "LA BOITE A COUDRE"</small>
+				<p class="sew__text--small">
+					j. grosjean, gérante du commerce "la boite à coudre"
 				</p>
 				<figure class="sew__logo">
 					<img src="./IMG/logo_sew.svg" alt="Logo de la boite à coudre" width="40">
@@ -215,8 +215,8 @@
 				<p class="tailor__text">
 					<q>Courageuse et n&rsquo;a pas peur du travail et très volontaire. </q>
 				</p>
-				<p class="tailor__text">
-					<small>P. ANTOINE, GERANT DU COMMERCE"PHILIPPE ANTOINE"</small>
+				<p class="tailor__text--small">
+					p. antoine, gérant du commerce "philippe antoine"
 				</p>
 				<figure class="tailor__logo">
 					<img src="./IMG/logo_tailor.svg" alt="Logo du tailleur Philippe Antoine" width="40">
@@ -378,8 +378,8 @@
 				<label for="mail" class="contact__label hidden">Votre courriel</label>
 				<input type="email" name="mail" id="mail" class="contact__email"
 					   title="Veuillez entrez votre addresse mail" placeholder="Votre addresse mail&hellip;">
-				<button class="contact__submit | actr | js-submit" type="submit">
-					<svg class="icon icon--chevron" width="8" height="12" viewBox="0 0 8 12" aria-hidden="true">
+				<button class="contact__submit" type="submit">
+					<svg width="8" height="12" viewBox="0 0 8 12" aria-hidden="true">
 						<path d="M7.62,6,6.21,4.54h0L2,.29.55,1.71,4.79,6,.55,10.19,2,11.61Z"></path>
 					</svg>
 				</button>
