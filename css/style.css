@@ -386,11 +386,6 @@ footer section { /*2*/
     /*max-width: 60%;*/
     /*margin-right: 10em;*/
 }
-.desc:hover .langage img:not(.langage__background img) {
-    border: solid yellow 0.1rem;
-    padding: 1em;
-}
-
 .job__description { /*10*/
     display: grid;
     grid-gap: 1.7em;
@@ -407,15 +402,22 @@ footer section { /*2*/
 }
 
 .ecole { /*10*/
-    align-content: space-between;
     border-top: 1px solid #EAEAEA;
     display: flex;
     flex: 1;
     grid-column: 1/-2;
     grid-row: 2/3;
-    padding: 20px 350px;
+    padding: 3em 6em;
 }
-
+.ecole__figure--helmo{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:0;
+}
+.ecole__figure--roch{
+    display: flex;
+    justify-content: flex-end;
+}
 .qualites__position { /*10*/
     display: flex;
 }
@@ -705,8 +707,8 @@ footer section { /*2*/
 }
 .desc:hover  .sql__figure img, .desc:hover  .php__figure img, .desc:hover  .html__figure img, .desc:hover  .css__figure img, .desc:hover  .js__figure img{
     background-color: #E30513;
-    border: none;
-    transform: scaleY(1);
+    border: solid #E30513 0.1rem;
+    /*transform: scaleY(0);*/
 }
 .school__item:hover {
     opacity: 100%;
