@@ -5,7 +5,8 @@
 	<meta name="author" content="Batta Gwenaëlle">
 	<meta name="description" content="Projet CV">
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<link rel="stylesheet" media="all" href="./css/style.css">
+	<link rel="stylesheet" media="all" href="./css/main.css">
+<!--	<link rel="stylesheet" media="all" href="./css/reset.css">-->
 	<title>
 		Projet CV Batta Gwenaëlle
 	</title>
@@ -20,7 +21,8 @@
 			Navigation
 		</h2>
 		<figure class="body__logo figure">
-			<a href="#cv" class="figure__link"><img src="./IMG/Logo-gb-white.svg" alt="Logo de Batta Gwenaëlle" class="figure__logo" height="70" width="70"></a>
+			<a href="#cv" class="figure__link"><img src="./IMG/Logo-gb-white.svg" alt="Logo de Batta Gwenaëlle"
+													class="figure__logo" height="70" width="70"></a>
 		</figure>
 		<ul class="nav__liste">
 			<li class="nav__item left"><a class="nav__link hidden" href="#cv">Logo</a></li>
@@ -50,17 +52,17 @@
 				<input id="etudianteHEPL" type="submit" value="&Eacute;tudiante à HEPL" class="intro__button red">
 			</form>
 		</div>
-			<div class="intro__position">
-				<p class="intro__text">
-					<mark>Découvrez</mark>
-					moi à travers <br> cette page web!
-				</p>
-			</div>
-		
+		<div class="intro__position">
+			<p class="intro__text">
+				<mark>Découvrez</mark>
+				moi à travers <br> cette page web!
+			</p>
+		</div>
 	</section>
 	<section id="decouvrez" aria-labelledby="decouvrez" class="presentation">
 		<h2 role="heading" aria-level="2">
-			À propos de <mark>moi</mark>
+			À propos de
+			<mark>moi</mark>
 		</h2>
 		<div class="presentation__description">
 			<p class="presentation__text">
@@ -70,7 +72,8 @@
 				Je suis en possession du <strong>permis B</strong> et je possède également un véhicule personnel.
 			</p>
 			<p class="presentation__text">
-				Je possède plusieurs <strong>diplômes</strong> tels que: le <strong>CESS</strong>, le diplôme de <strong>gestion</strong>
+				Je possède plusieurs <strong>diplômes</strong> tels que: le <strong>CESS</strong>, le diplôme de
+				<strong>gestion</strong>
 				de base, le certificat de qualification en <strong>mode et création </strong> et enfin le certificat de
 				qualification de ma <strong>septième tailleur</strong>. J&rsquo;ai également un bon niveau de <strong>français</strong>
 				car c&rsquo;est ma langue maternelle, un niveau moyen en <strong>anglais</strong> et en <strong>néerlandais</strong>.
@@ -86,12 +89,12 @@
 			<mark>langages</mark>
 			du web maîtrisé
 		</h2>
-		<figure class="langage__background">
-			<img src="./IMG/pexels-pixabay-270348.jpg" alt="image de fond de la section langage" width="1300">
-		</figure>
-		<svg class="langage__svg" width="1420" fill="#FFFFFF" viewBox="0 0 1420 1420">
-			<path d="M0,0V1420H1420V0ZM1007.11,1388.79,31.3,413,413.14,31.14,1389,1007Z"></path>
-		</svg>
+<!--		<figure class="langage__background">-->
+<!--			<img src="./IMG/pexels-pixabay-270348.jpg" alt="image de fond de la section langage" width="1300">-->
+<!--		</figure>-->
+<!--		<svg class="langage__svg" width="1420" fill="#FFFFFF" viewBox="0 0 1420 1420">-->
+<!--			<path d="M0,0V1420H1420V0ZM1007.11,1388.79,31.3,413,413.14,31.14,1389,1007Z"></path>-->
+<!--		</svg>-->
 		<div class="langage__position">
 			<section aria-labelledby="js-text" class="js__description desc">
 				<figure class="js__figure">
@@ -180,15 +183,20 @@
 				<figure class="bake__figure patron">
 					<img src="./IMG/collin_fred.jpg" alt="Photo de Frédérique Collin">
 				</figure>
-				<p class="bake__text">
-					<q>Très dynamique et consciencieuse dans les tâches demandées</q>
-				</p>
-				<p class="bake__text--small">
-					f.collin, patron de la boulangerie collin
-				</p>
-				<figure class="bake__logo">
-					<img src="./IMG/collin_logo.svg" alt="Logo de la Boulangerie Collin" width="50">
-				</figure>
+				<div class="bake__text">
+					<p class="bake__text--paragraphe">
+						Très dynamique et consciencieuse dans les tâches demandées
+					</p>
+					<div class="bake__switch">
+						<p class="bake__text--small">
+							f.collin, patron de la boulangerie collin
+						</p>
+						<figure class="bake__logo">
+							<img src="./IMG/collin_logo.svg" alt="Logo de la Boulangerie Collin" width="50">
+						</figure>
+					</div>
+					<a class="bake__link" href="#">en savoir plus</a>
+				</div>
 			</section>
 			<section class="xp__me me" aria-labelledby="nom">
 				<h3 id="nom" role="heading" aria-level="3" class="me__title hidden">
@@ -205,15 +213,20 @@
 				<figure class="sew__figure patron">
 					<img src="./IMG/grosjean_jullye.jpg" alt="Photo de la couturière Jullye Grosjean">
 				</figure>
-				<p class="sew__text">
-					<q>Très travailleuse et toujours présente à l&rsquo;heure. Bon contact avec les clients. </q>
-				</p>
-				<p class="sew__text--small">
-					j. grosjean, gérante du commerce "la boite à coudre"
-				</p>
-				<figure class="sew__logo">
-					<img src="./IMG/logo_sew.svg" alt="Logo de la boite à coudre" width="40">
-				</figure>
+				<div class="sew__text">
+					<p class="sew__text--paragraphe">
+						<q>Très travailleuse et toujours présente à l&rsquo;heure. Bon contact avec les clients. </q>
+					</p>
+					<div class="sew__switch">
+						<p class="sew__text--small">
+							j. grosjean, gérante du commerce "la boite à coudre"
+						</p>
+						<figure class="sew__logo">
+							<img src="./IMG/logo_sew.svg" alt="Logo de la boite à coudre" width="40">
+						</figure>
+					</div>
+					<a class="sew__link" href="#">en savoir plus</a>
+				</div>
 			</section>
 			<section class="xp__tailleur tailor" aria-labelledby="antoine">
 				<h3 id="antoine" role="heading" aria-level="3" class="tailor__title hidden">
@@ -222,16 +235,20 @@
 				<figure class="tailor__figure patron">
 					<img src="./IMG/antoine_philippe.jpg" alt="Photo du tailleur Philippe Antoine">
 				</figure>
-				<p class="tailor__text">
-					<q>Courageuse et n&rsquo;a pas peur du travail et très volontaire. </q>
-				</p>
-				<p class="tailor__text--small">
-					p. antoine, gérant du commerce "philippe antoine"
-				</p>
-				<figure class="tailor__logo">
-					<img src="./IMG/logo_tailor.svg" alt="Logo du tailleur Philippe Antoine" width="40">
-				</figure>
-				<a class="tailor__link" href="#">en savoir plus</a>
+				<div class="tailor__text--paragraphe">
+					<p class="tailor__text">
+						<q>Courageuse et n&rsquo;a pas peur du travail et très volontaire. </q>
+					</p>
+					<div class="tailor__switch">
+							<p class="tailor__text--small">
+								p. antoine, gérant du commerce "philippe antoine"
+							</p>
+							<figure class="tailor__logo">
+								<img src="./IMG/logo_tailor.svg" alt="Logo du tailleur Philippe Antoine" width="40">
+							</figure>
+						</div>
+						<a class="tailor__link" href="#">en savoir plus</a>
+				</div>
 			</section>
 			<div class="xp__div button">
 				<a href="#" class="button__link">
@@ -249,7 +266,8 @@
 			<img class="xp__img--bake" src="./IMG/bake__img.jpg" alt="photo d'un plateau de croissant" width="300">
 			<img class="xp__img--tailor" src="./IMG/pexels-andrea-piacquadio-3771080.jpg"
 				 alt="photo d'une machine à coudre" width="400">
-			<img class="xp__img--sew" src="./IMG/sew_img.jpg" alt="photo de femme entrain de prendre des mesures" width="400">
+			<img class="xp__img--sew" src="./IMG/sew_img.jpg" alt="photo de femme entrain de prendre des mesures"
+				 width="400">
 		</div>
 	</section>
 	<section aria-labelledby="job" class="job">
@@ -380,20 +398,40 @@
 			<a href="mailto:gwenaellebatta@gmail.com">gwenaellebatta@gmail.com</a>
 		</p>
 		<ul class="coordonneesp__reseau reseau">
-			<li class="reseau__item reseau__linkedin"><a href="https://www.linkedin.com/in/gwenaelle-batta-9251bb229/"><svg class ="reseau__linkedin" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.85 113.11"><g><path class="cls-1" d="M183.89,82.4H90.19A9.6,9.6,0,0,0,80.62,92v94a9.6,9.6,0,0,0,9.57,9.57h93.7a9.6,9.6,0,0,0,9.58-9.57V92A9.61,9.61,0,0,0,183.89,82.4Zm-69.32,96H98V124.53h16.62Zm-8.11-61.27a9.45,9.45,0,1,1,9.45-9.45A9.45,9.45,0,0,1,106.46,117.13ZM177,177.77H160.37l.21-32.43c-1.41-4.14-3.72-7.15-7.45-7.4-7.32-.51-10.24,3.54-11.4,7.19v33.53H125.11V124.79h16.62v6.31c3.83-5.27,6.57-7.46,18.93-7.46,16.34,0,16.33,21.7,16.33,21.7Z" transform="translate(-80.62 -82.4)"/></g></svg></a></li>
-			<li class="reseau__item"><a href="https://www.instagram.com/gwenaelle_webdesigner/"><svg class ="reseau__insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 131.5 132.8" xml:space="preserve" fill="#FFFFFF">
+			<li class="reseau__item reseau__linkedin"><a href="https://www.linkedin.com/in/gwenaelle-batta-9251bb229/">
+				<svg class="reseau__linkedin" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"
+					 viewBox="0 0 112.85 113.11">
+					<g>
+						<path class="cls-1"
+							  d="M183.89,82.4H90.19A9.6,9.6,0,0,0,80.62,92v94a9.6,9.6,0,0,0,9.57,9.57h93.7a9.6,9.6,0,0,0,9.58-9.57V92A9.61,9.61,0,0,0,183.89,82.4Zm-69.32,96H98V124.53h16.62Zm-8.11-61.27a9.45,9.45,0,1,1,9.45-9.45A9.45,9.45,0,0,1,106.46,117.13ZM177,177.77H160.37l.21-32.43c-1.41-4.14-3.72-7.15-7.45-7.4-7.32-.51-10.24,3.54-11.4,7.19v33.53H125.11V124.79h16.62v6.31c3.83-5.27,6.57-7.46,18.93-7.46,16.34,0,16.33,21.7,16.33,21.7Z"
+							  transform="translate(-80.62 -82.4)"/>
+					</g>
+				</svg>
+			</a></li>
+			<li class="reseau__item"><a href="https://www.instagram.com/gwenaelle_webdesigner/">
+				<svg class="reseau__insta" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 131.5 132.8" xml:space="preserve" fill="#FFFFFF">
 <path class="st0" d="M65.7,132.8C29.5,132.8,0,103,0,66.4S29.5,0,65.7,0s65.7,29.8,65.7,66.4S102,132.8,65.7,132.8z M65.7,6.1
 	C32.8,6.1,6,33.1,6,66.4s26.8,60.3,59.7,60.3s59.7-27,59.7-60.3S98.7,6.1,65.7,6.1z"/>
-<path d="M84.5,52.3c-2.3,0-4.2-1.9-4.2-4.2s1.9-4.2,4.2-4.2s4.2,1.9,4.2,4.2S86.9,52.3,84.5,52.3z M84.5,44.8
+					<path d="M84.5,52.3c-2.3,0-4.2-1.9-4.2-4.2s1.9-4.2,4.2-4.2s4.2,1.9,4.2,4.2S86.9,52.3,84.5,52.3z M84.5,44.8
 	c-1.8,0-3.2,1.5-3.2,3.2s1.5,3.2,3.2,3.2s3.2-1.5,3.2-3.2S86.3,44.8,84.5,44.8z"/>
-<path d="M80.4,101.7H50.6c-10.8,0-19.5-8.8-19.5-19.5V52.4c0-10.8,8.8-19.5,19.5-19.5h29.7c10.8,0,19.5,8.8,19.5,19.5v29.7
+					<path d="M80.4,101.7H50.6c-10.8,0-19.5-8.8-19.5-19.5V52.4c0-10.8,8.8-19.5,19.5-19.5h29.7c10.8,0,19.5,8.8,19.5,19.5v29.7
 	C99.9,92.9,91.2,101.7,80.4,101.7z M50.6,37.8c-8,0-14.5,6.5-14.5,14.5v29.7c0,8,6.5,14.5,14.5,14.5h29.7c8,0,14.5-6.5,14.5-14.5
 	V52.4c0-8-6.5-14.5-14.5-14.5H50.6z"/>
-<path d="M65.5,84.8c-10,0-18.1-8.1-18.1-18.1c0-10,8.1-18.1,18.1-18.1s18.1,8.1,18.1,18.1C83.6,76.7,75.5,84.8,65.5,84.8z
+					<path d="M65.5,84.8c-10,0-18.1-8.1-18.1-18.1c0-10,8.1-18.1,18.1-18.1s18.1,8.1,18.1,18.1C83.6,76.7,75.5,84.8,65.5,84.8z
 	 M65.5,53.7c-7.2,0-13.1,5.9-13.1,13.1c0,7.2,5.9,13.1,13.1,13.1S78.6,74,78.6,66.8C78.6,59.6,72.7,53.7,65.5,53.7z"/>
-</svg></a></li>
-			<li class="reseau__item"><a href="https://github.com/Gwenbatta0704" ><svg fill="#FFFFFF" class="reseau__github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.71 226.71" ><path d="M141.73,254.35A113.36,113.36,0,1,1,255.09,141,113.48,113.48,0,0,1,141.73,254.35Zm0-206.71A93.36,93.36,0,1,0,235.09,141,93.46,93.46,0,0,0,141.73,47.64Z" transform="translate(-28.38 -27.64)"/><path d="M192.69,107.88a54.59,54.59,0,0,0-1.54-21.22s-10.51-.79-21.32,7.29a39.32,39.32,0,0,0-8-.82H122.74a39,39,0,0,0-8.49.93c-10.87-8.2-21.46-7.4-21.46-7.4a54.37,54.37,0,0,0-1.45,21.89A39.57,39.57,0,0,0,82.91,133v8.68a40,40,0,0,0,39.83,39.83h3.45a17.55,17.55,0,0,0-6,13.19v2.09c-10.67,6.67-25.45-.13-27.57-5.45-1.79-4.47-6.26-9.19-6.26-9.19-8.55-8.56-13.83-1.49-13.83-1.49,6.47,1.19,12.26,11.57,12.26,11.57S87.51,208,102.15,210.4a45.54,45.54,0,0,0,18-.6v25.54A17.67,17.67,0,0,0,137.81,253h8.85a17.67,17.67,0,0,0,17.62-17.62V194.66a17.59,17.59,0,0,0-6-13.19h3.53a40,40,0,0,0,39.83-39.83V133A39.64,39.64,0,0,0,192.69,107.88Z" transform="translate(-28.38 -27.64)"/></svg></a></li>
+</svg>
+			</a></li>
+			<li class="reseau__item"><a href="https://github.com/Gwenbatta0704">
+				<svg fill="#FFFFFF" class="reseau__github" xmlns="http://www.w3.org/2000/svg"
+					 viewBox="0 0 226.71 226.71">
+					<path d="M141.73,254.35A113.36,113.36,0,1,1,255.09,141,113.48,113.48,0,0,1,141.73,254.35Zm0-206.71A93.36,93.36,0,1,0,235.09,141,93.46,93.46,0,0,0,141.73,47.64Z"
+						  transform="translate(-28.38 -27.64)"/>
+					<path d="M192.69,107.88a54.59,54.59,0,0,0-1.54-21.22s-10.51-.79-21.32,7.29a39.32,39.32,0,0,0-8-.82H122.74a39,39,0,0,0-8.49.93c-10.87-8.2-21.46-7.4-21.46-7.4a54.37,54.37,0,0,0-1.45,21.89A39.57,39.57,0,0,0,82.91,133v8.68a40,40,0,0,0,39.83,39.83h3.45a17.55,17.55,0,0,0-6,13.19v2.09c-10.67,6.67-25.45-.13-27.57-5.45-1.79-4.47-6.26-9.19-6.26-9.19-8.55-8.56-13.83-1.49-13.83-1.49,6.47,1.19,12.26,11.57,12.26,11.57S87.51,208,102.15,210.4a45.54,45.54,0,0,0,18-.6v25.54A17.67,17.67,0,0,0,137.81,253h8.85a17.67,17.67,0,0,0,17.62-17.62V194.66a17.59,17.59,0,0,0-6-13.19h3.53a40,40,0,0,0,39.83-39.83V133A39.64,39.64,0,0,0,192.69,107.88Z"
+						  transform="translate(-28.38 -27.64)"/>
+				</svg>
+			</a></li>
 		</ul>
 	</section>
 	<section aria-labelledby="contact" class="contact">
@@ -450,7 +488,8 @@
 			<a href="https://www.helmo.be/"><img src="./IMG/logo_helmo.svg" alt="logo HELMO" width="60"></a>
 		</figure>
 		<figure class="ecole__figure--sepulcre">
-			<a href="http://www.s2j.eu/"><img src="./IMG/logo_s2j.svg" alt="logo de l&rsquo;école Saint-Sépulcre" width="70"></a>
+			<a href="http://www.s2j.eu/"><img src="./IMG/logo_s2j.svg" alt="logo de l&rsquo;école Saint-Sépulcre"
+											  width="70"></a>
 		</figure>
 		<figure class="ecole__figure--roch">
 			<a href="http://www.saint-roch.be/fr/"><img src="./IMG/saintRoch.svg" alt="logo de l&rsquo;école Saint-Roch"
