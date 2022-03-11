@@ -591,7 +591,17 @@ footer section { /*2*/
         margin-bottom: 2em;
         margin-right: 1em;
     }
-
+    .tailor__link, .bake__link, .sew__link{
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap; /* added line */
+        width: 1px;
+    }
     .xp__img--tailor, .xp__img--sew, .xp__img--bake, .xp__rect, .xp__me { /*50*/
         border: 0;
         clip: rect(0, 0, 0, 0);
