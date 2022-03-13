@@ -6,7 +6,6 @@
 	<meta name="description" content="Projet CV">
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<link rel="stylesheet" media="all" href="./css/main.css">
-<!--	<link rel="stylesheet" media="all" href="./css/reset.css">-->
 	<title>
 		Projet CV Batta Gwenaëlle
 	</title>
@@ -16,27 +15,37 @@
 	<h1 id="cv" class="body__title hidden" role="heading" aria-level="1">
 		Gwenaëlle Batta Projet CV
 	</h1>
-	<nav aria-labelledby="nav" class="nav">
+	<nav aria-labelledby="nav" class="nav nav__container">
 		<h2 id="nav" class="hidden nav__title" role="heading" aria-level="2">
 			Navigation
 		</h2>
 		<figure class="body__logo figure">
 			<a href="#cv" class="figure__link"><img src="./IMG/Logo-gb-white.svg" alt="Logo de Batta Gwenaëlle"
-													class="figure__logo" height="70" width="70"></a>
+													class="figure__logo" height="60" width="60"></a>
 		</figure>
-		<ul class="nav__liste">
-			<li class="nav__item left"><a class="nav__link hidden" href="#cv">Logo</a></li>
-			<li class="nav__item left"><a class="nav__link" href="#battagwenaelle">Découvrez moi</a></li>
-			<li class="nav__item left"><a class="nav__link" href="#decouvrez">Informations personnelles</a></li>
-			<li class="nav__item left"><a class="nav__link" href="#langage">Langages web</a></li>
-		</ul>
-		<ul class="nav__liste">
-			<li class="nav__item right"><a href="#scolaire">Parcours scolaire</a></li>
-			<li class="nav__item right"><a href="#experience">Expérience pro</a></li>
-			<li class="nav__item right"><a href="#job">Objectif</a></li>
-			<li class="nav__item right"><a href="#qualites">Qualités</a></li>
-			<li class="nav__item right"><a href="#">Fr</a></li>
-		</ul>
+		<label class="hidden" for="burger">
+			<input id="burger" name="burger" type="checkbox" class="nav__checkbox">
+		</label>
+		<div class="nav__burger burger">
+			<span class="burger__line line1"></span>
+			<span class="burger__line line2"></span>
+			<span class="burger__line line3"></span>
+		</div>
+		<div class="nav__position">
+			<ul class="nav__liste">
+				<li class="nav__item left"><a class="nav__link hidden logo" href="#cv">Logo</a></li>
+				<li class="nav__item left"><a class="nav__link" href="#battagwenaelle">Découvrez moi</a></li>
+				<li class="nav__item left"><a class="nav__link" href="#decouvrez">Informations personnelles</a></li>
+				<li class="nav__item left"><a class="nav__link" href="#langage">Langages web</a></li>
+			</ul>
+			<ul class="nav__liste">
+				<li class="nav__item right"><a href="#scolaire">Parcours scolaire</a></li>
+				<li class="nav__item right"><a href="#experience">Expérience pro</a></li>
+				<li class="nav__item right"><a href="#job">Objectif</a></li>
+				<li class="nav__item right"><a href="#qualites">Qualités</a></li>
+				<li class="nav__item right"><a href="#">Fr</a></li>
+			</ul>
+		</div>
 	</nav>
 </header>
 <main>
@@ -89,65 +98,65 @@
 			<mark>langages</mark>
 			du web maîtrisé
 		</h2>
-<!--		<figure class="langage__background">-->
-<!--			<img src="./IMG/pexels-pixabay-270348.jpg" alt="image de fond de la section langage" width="1300">-->
-<!--		</figure>-->
-<!--		<svg class="langage__svg" width="1420" fill="#FFFFFF" viewBox="0 0 1420 1420">-->
-<!--			<path d="M0,0V1420H1420V0ZM1007.11,1388.79,31.3,413,413.14,31.14,1389,1007Z"></path>-->
-<!--		</svg>-->
+		<!--		<figure class="langage__background">-->
+		<!--			<img src="./IMG/pexels-pixabay-270348.jpg" alt="image de fond de la section langage" width="1300">-->
+		<!--		</figure>-->
+		<!--		<svg class="langage__svg" width="1420" fill="#FFFFFF" viewBox="0 0 1420 1420">-->
+		<!--			<path d="M0,0V1420H1420V0ZM1007.11,1388.79,31.3,413,413.14,31.14,1389,1007Z"></path>-->
+		<!--		</svg>-->
 		<div class="langage__position">
 			<section aria-labelledby="js-text" class="js__description desc">
-				<figure class="js__figure">
-					<img src="./IMG/js.svg" alt="Logo Javascript" width="70" class="js__logo">
-				</figure>
 				<h3 id="js-text" role="heading" aria-level="3" class="desc__title">
 					Javascript
 				</h3>
+				<figure class="desc__figure">
+					<img src="./IMG/js.svg" alt="Logo Javascript" width="70" class="js__logo">
+				</figure>
 				<p class="desc__text">
 					C&rsquo;est un langage qui permet d&rsquo;implémenter des mécanismes complexes sur une page web.
 				</p>
 			</section>
 			<section aria-labelledby="html-text" class="html__description desc">
-				<figure class="html__figure">
-					<img src="./IMG/html.svg" alt="Logo html" width="70" class="html__logo">
-				</figure>
 				<h3 id="html-text" role="heading" aria-level="3" class="desc__title">
 					html
 				</h3>
+				<figure class="desc__figure">
+					<img src="./IMG/html.svg" alt="Logo html" width="70" class="html__logo">
+				</figure>
 				<p class="desc__text">
 					Il est utilisé afin de créer et de représenter le contenu d&rsquo;une page web et sa structure.
 				</p>
 			</section>
 			<section aria-labelledby="css-text" class="css__description desc">
-				<figure class="css__figure">
-					<img src="./IMG/css.svg" alt="Logo css" width="70">
-				</figure>
 				<h3 id="css-text" role="heading" aria-level="3" class="desc__title">
 					css
 				</h3>
+				<figure class="desc__figure">
+					<img src="./IMG/css.svg" alt="Logo css" width="70">
+				</figure>
 				<p class="desc__text">
 					C&rsquo;est un langage utilisé sur Internet pour la mise en forme de fichiers et de pages HTML.
 				</p>
 			</section>
 			<section aria-labelledby="sql-text" class="sql__description desc">
-				<figure class="sql__figure">
-					<img src="./IMG/sql.svg" alt="Logo SQL" width="70">
-				</figure>
 				<h3 id="sql-text" role="heading" aria-level="3" class="desc__title">
 					SQL
 				</h3>
+				<figure class="desc__figure">
+					<img src="./IMG/sql.svg" alt="Logo SQL" width="70">
+				</figure>
 				<p class="desc__text">
 					C&rsquo;est un langage normalisé pour mettre à jour, récupérer et calculer des données d'une
 					base de données.
 				</p>
 			</section>
 			<section aria-labelledby="php-text" class="php__description desc">
-				<figure class="php__figure">
-					<img src="./IMG/php.svg" alt="Logo PHP" width="70">
-				</figure>
 				<h3 id="php-text" role="heading" aria-level="3" class="desc__title">
 					PHP
 				</h3>
+				<figure class="desc__figure">
+					<img src="./IMG/php.svg" alt="Logo PHP" width="70">
+				</figure>
 				<p class="desc__text">
 					C&rsquo;est un langage côté serveur pour le développement web et aussi utilisé dans
 					programmation généraliste.
@@ -240,14 +249,14 @@
 						<q>Courageuse et n&rsquo;a pas peur du travail et très volontaire. </q>
 					</p>
 					<div class="tailor__switch">
-							<p class="tailor__text--small">
-								p. antoine, gérant du commerce "philippe antoine"
-							</p>
-							<figure class="tailor__logo">
-								<img src="./IMG/logo_tailor.svg" alt="Logo du tailleur Philippe Antoine" width="40">
-							</figure>
-						</div>
-						<a class="tailor__link" href="#">en savoir plus</a>
+						<p class="tailor__text--small">
+							p. antoine, gérant du commerce "philippe antoine"
+						</p>
+						<figure class="tailor__logo">
+							<img src="./IMG/logo_tailor.svg" alt="Logo du tailleur Philippe Antoine" width="40">
+						</figure>
+					</div>
+					<a class="tailor__link" href="#">en savoir plus</a>
 				</div>
 			</section>
 			<div class="xp__div button">

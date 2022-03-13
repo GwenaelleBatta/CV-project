@@ -6,13 +6,12 @@
 
 html { /*1*/
     box-sizing: border-box;
-    /*width: 100%;*/
+    width: 100%;
 }
 
 body { /*1*/
     box-sizing: border-box;
     font-family: 'Ubuntu', serif;
-    font-size: 17px;
     margin: 0;
 }
 
@@ -53,6 +52,7 @@ footer section { /*2*/
     background: #FFFFFF;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
     color: #000000;
+    display: flex;
     font-size: 2rem;
     height: 6rem;
     left: 0;
@@ -60,7 +60,7 @@ footer section { /*2*/
     right: 0;
     top: 0;
     transition: transform .7s cubic-bezier(.645, .045, .355, 1);
-    z-index: 1000;
+    z-index: 100;
 }
 
 .red { /*10*/
@@ -100,6 +100,7 @@ footer section { /*2*/
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -121,17 +122,28 @@ footer section { /*2*/
 }
 
 .desc { /*10*/
+    align-items: center;
     background-color: #F8F8F8;
     border-radius: 2% 2% 2% 2%;
     color: #6A6A6A;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     margin-top: 0.7em;
     min-height: 10em;
-    text-align: center;
     transition: transform 0.7s;
+    text-align: center;
 }
 
+
 .desc__title { /*10*/
+    order: 1;
     text-transform: uppercase;
+}
+
+.desc__text { /*10*/
+    order: 2;
+
 }
 
 .presentation__description { /*10*/
@@ -140,6 +152,7 @@ footer section { /*2*/
     line-height: 2em;
     /*margin-top: 3rem;*/
     padding: 1em 0;
+    /*max-height: 580px;*/
 }
 
 .langage { /*10*/
@@ -236,11 +249,13 @@ footer section { /*2*/
     height: 20em;
     position: relative;
 }
+
 .tailor__logo { /*10*/
     align-self: flex-start;
     justify-content: flex-end;
     margin-top: 1em;
 }
+
 .reseau__item { /*10*/
     width: 35px;
 }
@@ -248,13 +263,20 @@ footer section { /*2*/
 .coordonneesp { /*10*/
     flex: 1;
 }
-
+.coordonnees { /*10*/
+    flex: 1;
+    font-size: 16px;
+    line-height: 0.9em;
+    margin-top: 0;
+}
 .contact { /*10*/
     flex: 1;
     margin-top: 6rem;
     position: relative;
 }
-
+.contact__email::placeholder{
+    color: #000000;
+}
 .contact__title { /*10*/
     font-size: 24px;
     font-weight: 500;
@@ -283,6 +305,9 @@ footer section { /*2*/
     right: 0;
     z-index: 1;
 }
+.desc__figure img{ /*11*/
+    border: 1px solid #EAEAEA;
+}
 
 .ecole figure { /*11*/
     flex: 1;
@@ -302,12 +327,11 @@ footer section { /*2*/
     /*width: 50%;*/
 }
 
-.coordonnees { /*10*/
-    flex: 1;
-    font-size: 16px;
-    line-height: 0.9em;
-    /*margin-left: 10em;*/
-    margin-top: 0;
+.patron img{
+    align-self: flex-start;
+    border-radius: 50%;
+    transition: transform 0.1s;
+    width: 30%;
 }
 
 .coordonneesp ul { /*11*/
@@ -322,7 +346,6 @@ footer section { /*2*/
     align-self: flex-start;
     justify-self: flex-end;
 }
-
 .nav__liste + .nav__liste a { /*21*/
     color: #AEAEAE;
     font-size: 0.375em; /*12/32*/
@@ -351,7 +374,12 @@ footer section { /*2*/
     flex: 1;
     flex-direction: column;
 }
-
+.bake__switch, .sew__switch, .tailor__switch { /*30*/
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .orga__text, .auto__text, .ponctuel__text { /*30*/
     display: flex;
     flex: 1;
@@ -359,7 +387,7 @@ footer section { /*2*/
     margin-top: 0;
 }
 
-.organisation, .autonome, .ponctualite {
+.organisation, .autonome, .ponctualite { /*30*/
     background-image: linear-gradient(to top, #000000 50%, transparent 50%);
     background-size: 200% 200%;
     border-radius: 0px 0px 5px 5px;
@@ -392,6 +420,9 @@ footer section { /*2*/
 /*----------Media queries-------------*/
 @media (max-width: 768px) {
     /*12*/
+    body{
+        font-size: 16px;
+    }
     footer {
         flex-direction: column;
         margin-top: 4em;
@@ -399,12 +430,107 @@ footer section { /*2*/
         /*padding-left: 1em;*/
     }
 
+    header {
+        display: flex;
+        width: 100%;
+    }
+
     header, main { /*2*/
         padding-left: 1em; /*50/17*/
     }
+    .body__logo{
+        margin-left: 16px;
+        margin-top: 17px;
+    }
+    .nav__position { /*10*/
+        /*padding-top: 60px;*/
+        /*margin-top: 2.5em;*/
+        align-items: center;
+        box-shadow: inset 100em 1em #FFFFFF;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100vh;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in-out;
+        /*margin: -50px;*/
+        /*padding-left: 50px;*/
+        width: 100vw;
+    }
 
-    .body__logo { /*10*/
-        margin-top: 0.4em;
+    .nav__liste {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .nav__item { /*10*/
+        border-bottom: 1px solid #AEAEAE;
+        flex: 1;
+        margin-top: 0.5rem;
+    }
+
+    .nav__checkbox { /*10*/
+        cursor: pointer;
+        display: block;
+        height: 3em;
+        opacity: 0;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 3em;
+        z-index: 5;
+    }
+
+    .nav__burger { /*10*/
+        display: flex;
+        flex-direction: column;
+        height: 0.7em;
+        justify-content: space-between;
+        justify-self: center;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        width: 1em;
+        z-index: 0;
+    }
+
+    .burger__line { /*10*/
+        background: #000000;
+        display: block;
+        height: 3px;
+        width: 100%;
+    }
+
+    .line1 { /*10*/
+        background-color: #E30513;
+        transform-origin: 0% 50%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .line2 { /*10*/
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .line3 { /*10*/
+        transform-origin: 10% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav__checkbox:checked ~ .nav__position { /*30*/
+        transform: translateX(-30%);
+    }
+
+    .nav__checkbox:checked ~ .burger .line1 {
+        transform: rotate(45deg);
+    }
+
+    .nav__checkbox:checked ~ .burger .line3 {
+        transform: rotate(-45deg);
+    }
+
+    .nav__checkbox:checked ~ .burger .line2 {
+        transform: scaleY(0);
     }
 
     .intro { /*10*/
@@ -578,10 +704,10 @@ footer section { /*2*/
         right: 10px;
     }
 
-    .langage img:not(.langage__background img) { /*22*/
-        border: solid #EAEAEA 0.1rem;
-        padding: 1em;
-    }
+    /*.langage img:not(.langage__background img) { !*22*!*/
+    /*    !*border: solid #EAEAEA 0.1rem;*!*/
+    /*    padding: 1em;*/
+    /*}*/
 
     .presentation__description .presentation__text:first-child { /*30*/
         grid-column: 1/3;
@@ -591,7 +717,13 @@ footer section { /*2*/
         margin-bottom: 2em;
         margin-right: 1em;
     }
-    .tailor__link, .bake__link, .sew__link{
+
+    .desc:active .desc__figure img{ /*31*/
+        background-color: #E30513;
+        border: solid #E30513 0.1rem;
+    }
+
+    .tailor__link, .bake__link, .sew__link { /*30*/
         border: 0;
         clip: rect(0, 0, 0, 0);
         height: 1px;
@@ -602,6 +734,7 @@ footer section { /*2*/
         white-space: nowrap; /* added line */
         width: 1px;
     }
+
     .xp__img--tailor, .xp__img--sew, .xp__img--bake, .xp__rect, .xp__me { /*50*/
         border: 0;
         clip: rect(0, 0, 0, 0);
@@ -624,32 +757,35 @@ footer section { /*2*/
         overflow: hidden;
     }
 
-    .desc:active .sql__figure img, .desc:active .php__figure img, .desc:active .html__figure img, .desc:active .css__figure img, .desc:active .js__figure img { /*155*/
-        background-color: #E30513;
-        border: solid #E30513 0.1rem;
-    }
-}
 
+}
 @media (min-width: 769px) {
     /*12*/
+    body{
+        font-size: 17px;
+    }
     footer {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     header, main { /*2*/
-        padding-left: 11.76470588235294em; /*200/17*/
+        padding-left: 10.76470588235294em; /*200/17*/
         position: relative;
     }
 
     .nav { /*10*/
         align-items: center;
-        display: flex;
+        /*display: flex;*/
+    }
+
+    .nav__position { /*10*/
+        display: contents;
     }
 
     .nav__liste { /*10*/
         display: flex;
-        padding-left: 0.625em; /*20/32*/
+        padding-left: 0;
     }
 
     .nav__item { /*10*/
@@ -661,6 +797,7 @@ footer section { /*2*/
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 65% 35%;
         position: relative;
+        min-height: 850px;
     }
 
     .intro__div { /*10*/
@@ -669,11 +806,10 @@ footer section { /*2*/
     }
 
     .intro__text { /*10*/
-
         flex: 1;
         font-size: 36px; /*36/17*/
         font-weight: 100;
-        padding: 1.861111111111111em 3.722222222222222em; /*134/36    */
+        padding: 1em 3.722222222222222em; /*134/36    */
     }
 
     .intro__position { /*10*/
@@ -694,6 +830,7 @@ footer section { /*2*/
 
     .presentation__description { /*10*/
         grid-template-rows: repeat(3, 1fr);
+        max-height: 580px;
     }
 
     .presentation__figure { /*10*/
@@ -784,7 +921,7 @@ footer section { /*2*/
 
     .xp__img--bake { /*10*/
         bottom: 0;
-        left: -8%;
+        left: -2%;
         position: absolute;
         z-index: -2;
     }
@@ -825,16 +962,19 @@ footer section { /*2*/
 
     .bake { /*10*/
         grid-row: 2/4;
+        position: relative;
     }
 
     .sew { /*10*/
         grid-column: 2;
         grid-row: 3/5;
+        position: relative;
     }
 
     .tailor { /*10*/
         grid-column: 3;
         grid-row: 2/4;
+        position: relative;
     }
 
     .button__polygon { /*10*/
@@ -904,7 +1044,7 @@ footer section { /*2*/
     .scrollIndicateur { /*10*/
         background-color: #EAEAEA;
         bottom: 0;
-        left: calc(6.59vw - 1rem);
+        left: calc(8.7vw - 1rem);
         position: absolute;
         top: 0;
         width: 0.1rem;
@@ -969,6 +1109,20 @@ footer section { /*2*/
         grid-column: 2/3;
         grid-row: 1/2;
     }
+    .nav .figure__logo{ /*20*/
+        margin-left: 0.75em;
+    }
+    .nav__checkbox, .burger { /*20*/
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap; /* added line */
+        width: 1px;
+    }
 
     .nav__liste + .nav__liste { /*20*/
         flex-grow: 1;
@@ -987,6 +1141,8 @@ footer section { /*2*/
         background-size: cover;
         color: #FFFFFF;
         transform: scaleY(1.08);
+        /*padding: 2em 0;*/
+        /*transition: padding 2s;*/
     }
 
     .school__item:hover { /*20*/
@@ -1012,6 +1168,11 @@ footer section { /*2*/
 
     .reseau__insta:hover { /*20*/
         fill: #D13A6F;
+    }
+
+    .nav__liste:first-of-type a {
+        background-color: #FFFFFF;
+        padding: 0.5em;
     }
 
     .coordonnees p:hover { /*21*/
@@ -1069,15 +1230,16 @@ footer section { /*2*/
         line-height: 1.2em;
         text-transform: uppercase;
     }
+
     .tailor__link, .bake__link, .sew__link { /*30*/
-        /*bottom: 0;*/
+        bottom: 0;
         color: #FFFFFF;
         font-size: 14px;
         font-weight: 600;
-        /*left: 5%;*/
-        /*opacity: 0;*/
+        left: 10%;
+        opacity: 0;
         pointer-events: none;
-        /*position: absolute;*/
+        position: absolute;
         text-transform: uppercase;
         transform: translateY(2em);
 
@@ -1086,18 +1248,20 @@ footer section { /*2*/
     .nav__liste:first-of-type a:hover { /*31*/
         background-color: #EAEAEA;
         padding: 0.5em;
-        position: relative;
+        /*position: relative;*/
         transform: scale(.8);
-        transform-origin: 50% 100%;
-        transition: 0.2s;
+        /*transform-origin: 50% 100%;*/
+        transition: background-color 0.5s ease-out;
     }
 
     .nav__liste + .nav__liste a:hover { /*31*/
         color: #000000;
     }
 
-    .button__link:hover span:before { /*31*/
-        transform: scale(0.8);
+
+    .desc:hover .desc__figure img { /*31*/
+        background-color: #E30513;
+        border: solid #E30513 0.1rem;
     }
 
     .sew figure, .tailor figure, .bake figure { /*33*/
@@ -1113,10 +1277,20 @@ footer section { /*2*/
         padding: 70px;
     }
 
+    .button__link:hover span:before { /*41*/
+        transform: scale(0.8);
+    }
+    .tailor:hover .tailor__link, .bake:hover .bake__link, .sew:hover .sew__link{ /*60*/
+        opacity: 1;
+        bottom: 4em;
+    }
     .intro, .presentation, .langage, .ref, .school, .job, .qualites { /*70*/
         margin-top: 6rem;
     }
-
+    .tailor:hover .tailor__switch, .bake:hover .bake__switch, .sew:hover .sew__switch { /*90*/
+        /*display: none;*/
+        opacity: 0;
+    }
     .tailor:hover .patron img, .bake:hover .patron img, .sew:hover .patron img { /*93*/
         transform: scale(1.2);
     }
@@ -1132,10 +1306,6 @@ footer section { /*2*/
         transform: scale(1.1);
     }
 
-    .desc:hover .sql__figure img, .desc:hover .php__figure img, .desc:hover .html__figure img, .desc:hover .css__figure img, .desc:hover .js__figure img { /*155*/
-        background-color: #E30513;
-        border: solid #E30513 0.1rem;
-    }
 
     .orga:hover .organisation, .auto:hover .autonome, .ponctuel:hover .ponctualite { /*180*/
         background-image: linear-gradient(to top, #00000 51%, transparent 50%);
