@@ -1,1 +1,14 @@
-<svg enable-background="new 0 0 283.5 283.5" viewBox="0 0 283.5 283.5" xmlns="http://www.w3.org/2000/svg"><circle cx="141.3" cy="142.7" fill="#98d6f7" r="86.5"/><g fill="none" stroke="#fff" transform="translate(-284.03 -202.66)"><path d="m381.1 347.5h86.5"/><path d="m440 380 27-32.4-27-32.4"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 283.5 283.5" style="enable-background:new 0 0 283.5 283.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#98D6F7;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<circle class="st0" cx="141.3" cy="142.7" r="86.5"/>
+<g transform="translate(-284.03 -202.66)">
+	<path class="st1" d="M392.8,343.8h65.5"/>
+</g>
+<polyline class="st1" points="148,113.8 175.1,141 148,168.1 "/>
+</svg>

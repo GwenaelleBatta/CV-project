@@ -5,7 +5,8 @@
 	<meta name="author" content="Batta Gwenaëlle">
 	<meta name="description" content="Projet CV">
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<link rel="stylesheet" media="all" href="./css/main.css">
+	<link rel="stylesheet" media="all" href="./css/style.css">
+	<link rel="icon" href="./IMG/Logo-gb-white.svg" sizes="any">
 	<title>
 		Projet CV Batta Gwenaëlle
 	</title>
@@ -20,12 +21,14 @@
 			Navigation
 		</h2>
 		<figure class="body__logo figure">
-			<a href="#cv" class="figure__link"><img src="./IMG/Logo-gb-white.svg" alt="Logo de Batta Gwenaëlle"
-													class="figure__logo" height="60" width="60"></a>
+			<a href="#cv" class="figure__link">
+				<img src="./IMG/Logo-gb-white.svg" alt="Logo de Batta Gwenaëlle" class="figure__logo" height="60" width="60">
+			</a>
 		</figure>
 		<label class="hidden" for="burger">
-			<input id="burger" name="burger" type="checkbox" class="nav__checkbox">
+			Checkbox Burger Menu
 		</label>
+		<input id="burger" name="burger" type="checkbox" class="nav__checkbox">
 		<div class="nav__burger burger">
 			<span class="burger__line line1"></span>
 			<span class="burger__line line2"></span>
@@ -49,7 +52,7 @@
 	</nav>
 </header>
 <main>
-	<section class="intro" aria-labelledby="battagwenaelle">
+	<section class="intro parallax" aria-labelledby="battagwenaelle">
 		<div class="intro__div">
 			<h2 id="battagwenaelle" role="heading" aria-level="2" class="intro__title">
 				Je m'appelle <br>
@@ -68,8 +71,8 @@
 			</p>
 		</div>
 	</section>
-	<section id="decouvrez" aria-labelledby="decouvrez" class="presentation">
-		<h2 role="heading" aria-level="2">
+	<section aria-labelledby="decouvrez" class="presentation">
+		<h2 id="decouvrez" role="heading" aria-level="2">
 			À propos de
 			<mark>moi</mark>
 		</h2>
@@ -92,20 +95,23 @@
 			</figure>
 		</div>
 	</section>
-	<section aria-labelledby="langage" class="langage">
+	<section aria-labelledby="langage parallax" class="langage">
 		<h2 id="langage" role="heading" aria-level="2" class="langage__title">
 			Les
 			<mark>langages</mark>
 			du web maîtrisé
 		</h2>
-		<!--		<figure class="langage__background">-->
-		<!--			<img src="./IMG/pexels-pixabay-270348.jpg" alt="image de fond de la section langage" width="1300">-->
-		<!--		</figure>-->
-		<!--		<svg class="langage__svg" width="1420" fill="#FFFFFF" viewBox="0 0 1420 1420">-->
-		<!--			<path d="M0,0V1420H1420V0ZM1007.11,1388.79,31.3,413,413.14,31.14,1389,1007Z"></path>-->
-		<!--		</svg>-->
-		<div class="langage__position">
-			<section aria-labelledby="js-text" class="js__description desc">
+<!--				<figure class="langage__background paralllax">-->
+<!--					<img src="./IMG/pexels-pixabay-270348.jpg" alt="image de fond de la section langage" width="1300">-->
+<!--				</figure>-->
+<!--		<svg class="langage__svg" viewBox="0 0 2097.7 2307.02">-->
+<!--			<rect class="langage__svg&#45;&#45;rect" x="513.15" y="114.78" width="1071.41" height="2077.46" transform="translate(-480.62 851.2) rotate(-36.54)"/>-->
+<!--		</svg>-->
+<!--				<svg class="langage__svg" width="1420" fill="#FFFFFF" viewBox="0 0 1420 1420">-->
+<!--					<path d="M0,0V1420H1420V0ZM1007.11,1388.79,31.3,413,413.14,31.14,1389,1007Z"></path>-->
+<!--				</svg>-->
+		<div class="langage__position parallax">
+			<article aria-labelledby="js-text" class="js__description desc">
 				<h3 id="js-text" role="heading" aria-level="3" class="desc__title">
 					Javascript
 				</h3>
@@ -115,8 +121,8 @@
 				<p class="desc__text">
 					C&rsquo;est un langage qui permet d&rsquo;implémenter des mécanismes complexes sur une page web.
 				</p>
-			</section>
-			<section aria-labelledby="html-text" class="html__description desc">
+			</article>
+			<article aria-labelledby="html-text" class="html__description desc">
 				<h3 id="html-text" role="heading" aria-level="3" class="desc__title">
 					html
 				</h3>
@@ -126,8 +132,8 @@
 				<p class="desc__text">
 					Il est utilisé afin de créer et de représenter le contenu d&rsquo;une page web et sa structure.
 				</p>
-			</section>
-			<section aria-labelledby="css-text" class="css__description desc">
+			</article>
+			<article aria-labelledby="css-text" class="css__description desc">
 				<h3 id="css-text" role="heading" aria-level="3" class="desc__title">
 					css
 				</h3>
@@ -137,8 +143,8 @@
 				<p class="desc__text">
 					C&rsquo;est un langage utilisé sur Internet pour la mise en forme de fichiers et de pages HTML.
 				</p>
-			</section>
-			<section aria-labelledby="sql-text" class="sql__description desc">
+			</article>
+			<article aria-labelledby="sql-text" class="sql__description desc">
 				<h3 id="sql-text" role="heading" aria-level="3" class="desc__title">
 					SQL
 				</h3>
@@ -149,8 +155,8 @@
 					C&rsquo;est un langage normalisé pour mettre à jour, récupérer et calculer des données d'une
 					base de données.
 				</p>
-			</section>
-			<section aria-labelledby="php-text" class="php__description desc">
+			</article>
+			<article aria-labelledby="php-text" class="php__description desc">
 				<h3 id="php-text" role="heading" aria-level="3" class="desc__title">
 					PHP
 				</h3>
@@ -161,7 +167,7 @@
 					C&rsquo;est un langage côté serveur pour le développement web et aussi utilisé dans
 					programmation généraliste.
 				</p>
-			</section>
+			</article>
 		</div>
 	</section>
 	<section class="school" aria-labelledby="scolaire">
@@ -170,13 +176,12 @@
 				Parcours scolaire
 			</h2>
 			<ul class="school__liste">
-				<li class="school__item">2021 2e Bachelier infographie</li>
-				<li class="school__item">2020 1er Bachelier infographie</li>
-				<li class="school__item">2019 Bachelier Comptabilité</li>
-				<li class="school__item">2017 7eme tailleur</li>
-				<li class="school__item">2015-2017 &Eacute;tude en couture</li>
+				<li class="school__item" data-image="url('../IMG/ordi.jpg')">2021 2e Bachelier infographie <img class="hidden school__arrow" src="./IMG/fleche-bluecircle.svg" alt="Voir plus" width="100"></li>
+				<li class="school__item" data-image="url('../IMG/bureau-ordi.jpg')">2020 1er Bachelier infographie <img class="hidden school__arrow" src="./IMG/fleche-bluecircle.svg" alt="Voir plus" width="100"></li>
+				<li class="school__item" data-image="url('../IMG/calculette.jpg')">2019 Bachelier Comptabilité <img class="hidden school__arrow" src="./IMG/fleche-bluecircle.svg" alt="Voir plus" width="100"></li>
+				<li class="school__item" data-image="url('../IMG/bobine.jpg')">2017 7eme tailleur <img class="hidden school__arrow" src="./IMG/fleche-bluecircle.svg" alt="Voir plus" width="100"></li>
+				<li class="school__item" data-image="url('../IMG/grosse-bobines.jpg')">2015-2017 &Eacute;tude en couture <img class="hidden school__arrow" src="./IMG/fleche-bluecircle.svg" alt="Voir plus" width="100"></li>
 			</ul>
-			<img class="hidden" src="./IMG/fleche-bluecircle.svg" alt="Voir plus" width="100">
 		</div>
 	</section>
 	<section aria-labelledby="experience" class="ref">
@@ -185,7 +190,7 @@
 			<mark>références</mark>
 		</h2>
 		<div class="xp">
-			<section class="xp__boulangerie bake" aria-labelledby="boulangerie">
+			<article class="xp__boulangerie bake" aria-labelledby="boulangerie">
 				<h3 id="boulangerie" role="heading" aria-level="3" class="bake__title hidden">
 					Boulangerie Collin
 				</h3>
@@ -206,16 +211,16 @@
 					</div>
 					<a class="bake__link" href="#">en savoir plus</a>
 				</div>
-			</section>
-			<section class="xp__me me" aria-labelledby="nom">
+			</article>
+			<article class="xp__me me" aria-labelledby="nom">
 				<h3 id="nom" role="heading" aria-level="3" class="me__title hidden">
 					Batta Gwenaelle
 				</h3>
 				<figure class="me__figure">
 					<img src="./IMG/Gwen2.jpg" alt="Photo de Batta Gwenaëlle">
 				</figure>
-			</section>
-			<section class="xp__couture sew" aria-labelledby="coudre">
+			</article>
+			<article class="xp__couture sew" aria-labelledby="coudre">
 				<h3 id="coudre" role="heading" aria-level="3" class="sew__title hidden">
 					La Boite à Coudre
 				</h3>
@@ -236,8 +241,8 @@
 					</div>
 					<a class="sew__link" href="#">en savoir plus</a>
 				</div>
-			</section>
-			<section class="xp__tailleur tailor" aria-labelledby="antoine">
+			</article>
+			<article class="xp__tailleur tailor" aria-labelledby="antoine">
 				<h3 id="antoine" role="heading" aria-level="3" class="tailor__title hidden">
 					Philippe Antoine
 				</h3>
@@ -258,7 +263,7 @@
 					</div>
 					<a class="tailor__link" href="#">en savoir plus</a>
 				</div>
-			</section>
+			</article>
 			<div class="xp__div button">
 				<a href="#" class="button__link">
 					<span class="button__svg">
@@ -309,14 +314,14 @@
 			<mark>qualités</mark>
 		</h2>
 		<div class="qualites__position">
-			<section aria-labelledby="orga" class="orga">
+			<article aria-labelledby="orga" class="orga">
 				<h3 id="orga" role="heading" aria-level="3" class="orga__title hidden">
-					Organisation
+					Bloc sur la qualité organisation
 				</h3>
 				<figure class="orga__figure">
 					<img src="./IMG/orga.jpg" alt="Photo d&rsquo;armoires de rangement" width="431">
 				</figure>
-				<section aria-labelledby="orga-text" class="orga__text organisation">
+				<article aria-labelledby="orga-text" class="orga__text organisation">
 					<h4 id="orga-text" role="heading" aria-level="4" class="organisation__title">
 						Organisation
 					</h4>
@@ -325,16 +330,16 @@
 						et
 						finis toujours dans les temps.
 					</p>
-				</section>
-			</section>
-			<section aria-labelledby="autonome" class="auto">
+				</article>
+			</article>
+			<article aria-labelledby="autonome" class="auto">
 				<h3 id="autonome" role="heading" aria-level="3" class="auto__title hidden">
-					Autonomie
+					Bloc sur la qualité autonomie
 				</h3>
 				<figure class="auto__figure">
 					<img src="./IMG/autonomi.jpg" alt="Photo d&rsquo;armoires de rangement" width="431">
 				</figure>
-				<section aria-labelledby="autonome-text" class="auto__text autonome">
+				<article aria-labelledby="autonome-text" class="auto__text autonome">
 					<h4 id="autonome-text" role="heading" aria-level="4" class="autonome__title">
 						Autonomie
 					</h4>
@@ -343,16 +348,16 @@
 						et je
 						n&rsquo;aime pas rester sans rien faire.
 					</p>
-				</section>
-			</section>
-			<section aria-labelledby="ponctuel" class="ponctuel">
+				</article>
+			</article>
+			<article aria-labelledby="ponctuel" class="ponctuel">
 				<h3 id="ponctuel" role="heading" aria-level="3" class="ponctuel__title hidden">
-					Ponctualité
+					Bloc sur la qualité ponctualité
 				</h3>
 				<figure class="ponctuel__figure">
 					<img src="./IMG/ponctuel.jpg" alt="Photo d&rsquo;armoires de rangement" width="431">
 				</figure>
-				<section aria-labelledby="ponctuel-text" class="ponctuel__text ponctualite">
+				<article aria-labelledby="ponctuel-text" class="ponctuel__text ponctualite">
 					<h4 id="ponctuel-text" role="heading" aria-level="4" class=" ponctualite__title">
 						Ponctualité
 					</h4>
@@ -361,8 +366,8 @@
 						parfois en
 						avance.
 					</p>
-				</section>
-			</section>
+				</article>
+			</article>
 			<div class="qualites__form button">
 				<a href="#" class="button__link">
 					<span>
@@ -378,8 +383,8 @@
 	</section>
 	<div class="scrollIndicateur scroll">
 		<svg class="scroll__svg" width="20" height="200" xmlns="http://www.w3.org/2000/svg">
-			<rect x="0" y="50" width="5" height="30" fill="#000000"/>
-			<rect x="0" y="80" width="5" height="100" fill="#E30513"/>
+			<rect x="0" y="50" width="5" height="40" fill="#000000" class="scroll__svg--1"/>
+			<rect x="0" y="80" width="5" height="100" fill="#E30513" class="scroll__svg--2"/>
 		</svg>
 	</div>
 </main>
@@ -408,6 +413,7 @@
 		</p>
 		<ul class="coordonneesp__reseau reseau">
 			<li class="reseau__item reseau__linkedin"><a href="https://www.linkedin.com/in/gwenaelle-batta-9251bb229/">
+				<span class="hidden"> Logo Linkedin </span>
 				<svg class="reseau__linkedin" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"
 					 viewBox="0 0 112.85 113.11">
 					<g>
@@ -418,8 +424,8 @@
 				</svg>
 			</a></li>
 			<li class="reseau__item"><a href="https://www.instagram.com/gwenaelle_webdesigner/">
-				<svg class="reseau__insta" version="1.1" xmlns="http://www.w3.org/2000/svg"
-					 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<span class="hidden"> Logo Instagram </span>
+				<svg class="reseau__insta" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 					 viewBox="0 0 131.5 132.8" xml:space="preserve" fill="#FFFFFF">
 <path class="st0" d="M65.7,132.8C29.5,132.8,0,103,0,66.4S29.5,0,65.7,0s65.7,29.8,65.7,66.4S102,132.8,65.7,132.8z M65.7,6.1
 	C32.8,6.1,6,33.1,6,66.4s26.8,60.3,59.7,60.3s59.7-27,59.7-60.3S98.7,6.1,65.7,6.1z"/>
@@ -433,6 +439,7 @@
 </svg>
 			</a></li>
 			<li class="reseau__item"><a href="https://github.com/Gwenbatta0704">
+				<span class="hidden">Logo Github </span>
 				<svg fill="#FFFFFF" class="reseau__github" xmlns="http://www.w3.org/2000/svg"
 					 viewBox="0 0 226.71 226.71">
 					<path d="M141.73,254.35A113.36,113.36,0,1,1,255.09,141,113.48,113.48,0,0,1,141.73,254.35Zm0-206.71A93.36,93.36,0,1,0,235.09,141,93.46,93.46,0,0,0,141.73,47.64Z"
@@ -452,7 +459,7 @@
 				<label for="mail" class="contact__label hidden">Votre courriel</label>
 				<input type="email" name="mail" id="mail" class="contact__email"
 					   title="Veuillez entrez votre addresse mail" placeholder="Votre addresse mail&hellip;">
-				<button class="contact__submit" type="submit">
+				<button class="contact__submit" aria-label="Envoyer addresse mail" type="submit">
 					<svg width="8" height="12" viewBox="0 0 8 12" aria-hidden="true">
 						<path d="M7.62,6,6.21,4.54h0L2,.29.55,1.71,4.79,6,.55,10.19,2,11.61Z"></path>
 					</svg>
@@ -490,7 +497,7 @@
 			&Eacute;cole fréquentée
 		</h2>
 		<figure class="ecole__figure--hepl">
-			<a href="https://www.provincedeliege.be/hauteecole"><img src="./IMG/hepl.svg" alt="logo de la HEPL"
+			<a href="https://www.hepl.be/fr"><img src="./IMG/hepl.svg" alt="logo de la HEPL"
 																	 width="100"></a>
 		</figure>
 		<figure class="ecole__figure--helmo">
@@ -506,5 +513,6 @@
 		</figure>
 	</section>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
